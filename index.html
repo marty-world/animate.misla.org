@@ -112,17 +112,20 @@
                                  <li class="navbar__item nav-fade">
                                     <a href="index.html">Home</a>
                                  </li>
-                                 <li class="navbar__item nav-fade">
-                                    <a href="index.html#become-animator">AI Animation</a>
-                                 </li>
-                                 <li class="navbar__item nav-fade">
-                                    <a href="index.html#bootcamps">our bootcamps</a>
+                                 <li class="navbar__item navbar__item--has-children nav-fade">
+                                    <button aria-label="dropdown menu" class="navbar__dropdown-label">our bootcamps</button>
+                                    <ul class="navbar__sub-menu">
+                                       <li>
+                                          <a href="index.html#become-animator">AI Animation</a>
+                                       </li>
+                                       
+                                    </ul>
                                  </li>
                                  <li class="navbar__item nav-fade">
                                     <a href="index.html#testimonials">TESTIMONIALS</a>
                                  </li>
                                  <li class="navbar__item nav-fade">
-                                    <a href="index.html#scholarships">Scholarships</a>
+                                    <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank">Scholarships</a>
                                  </li>
                                  <li class="navbar__item nav-fade">
                                     <a href="index.html#partners">Our partners</a>
@@ -808,22 +811,20 @@
                                  </div>
                                  <div class="col-12 col-lg-8">
                                     <div class="footer__nav-list">
-                                       <ul class="justify-content-center justify-content-lg-end">
-                                          <li>
-                                             <a href="index.html">Home</a>
-                                          </li>
-                                          <li>
-                                             <a href="about-us.html">About Us</a>
-                                          </li>
-                                          <li>
-                                             <a href="shop.html">Shop</a>
-                                          </li>
-                                          <li>
-                                             <a href="blog.html">Blog</a>
-                                          </li>
-                                          <li>
-                                             <a href="contact-us.html">Join Now</a>
-                                          </li>
+                                       <ul class="justify-content-center justify-content-lg-end" style="text-transform: uppercase;">
+                                         <li class="">
+                                    <a href="index.html">Home</a>
+                                 </li>
+                                <li>
+                                          <a href="index.html#become-animator">AI Animation</a>
+                                       </li>
+                                 <li class="">
+                                    <a href="index.html#testimonials">TESTIMONIALS</a>
+                                 </li>
+                                 <li class="">
+                                    <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank">Scholarships</a>
+                                 </li>
+                                
                                        </ul>
                                     </div>
                                  </div>
@@ -953,7 +954,7 @@
                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                $('html, body').animate({
                  scrollTop: $(hash).offset().top
-               }, 800, function(){
+               }, 200, function(){
          
                  // Add hash (#) to URL when done scrolling (default click behavior)
                  window.location.hash = hash;

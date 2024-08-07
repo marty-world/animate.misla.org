@@ -405,7 +405,7 @@ p span {
   margin-bottom: 60px;
 }
 .pr-70px {
-  padding-right: 70px;
+  padding-right: 20px;
 }
 .br-img {
     background: url(../images/new/heading.png) center / contain no-repeat;
@@ -3863,15 +3863,15 @@ span {
 }
 
 .overview .overview__single {
-  padding: 32px;
-  border: 1px solid #302e3f;
-  border-radius: 10px;
-  border-top-right-radius: 100px;
-  background-color: #100d21;
+  padding: 20px 30px;
+  border: 1px solid #4C4C4C;
+  border-radius: 5px;
+  border-top-right-radius: 25px;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-bottom: 20px;
 }
 .overview .overview__single::before {
   content: "";
@@ -3885,14 +3885,15 @@ span {
   will-change: width;
 }
 .overview .overview__single .overview__thumb {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .overview .overview__single .overview__thumb img {
   transition: filter 0.3s ease;
 }
 .overview .overview__single h4 {
   color: var(--white);
-  font-weight: 600;
+  font-weight: 600;text-transform: uppercase;
+  font-size: 20px;line-height: 26px;
 }
 .overview .overview__single h4,
 .overview .overview__single p {
@@ -3907,12 +3908,12 @@ span {
 .overview .overview__single:hover::before {
   width: 100%;
 }
-.overview .overview__single:hover .overview__thumb img {
+/* .overview .overview__single:hover .overview__thumb img {
   filter: brightness(0) saturate(100%) invert(7%) sepia(6%) saturate(579%) hue-rotate(97deg) brightness(98%) contrast(91%);
-}
+} */
 .overview .overview__single:hover h4,
 .overview .overview__single:hover p {
-  color: var(--quaternary-color);
+  color: var(--white);
 }
 .overview .overview__single-active {
   border-color: var(--primary-color);
@@ -3922,12 +3923,12 @@ span {
   left: unset;
   width: 100%;
 }
-.overview .overview__single-active .overview__thumb img {
+/* .overview .overview__single-active .overview__thumb img {
   filter: brightness(0) saturate(100%) invert(7%) sepia(6%) saturate(579%) hue-rotate(97deg) brightness(98%) contrast(91%);
-}
+} */
 .overview .overview__single-active h4,
 .overview .overview__single-active p {
-  color: var(--quaternary-color);
+  color: var(--white);
 }
 
 .lilu-view {

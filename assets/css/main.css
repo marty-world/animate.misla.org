@@ -2623,7 +2623,9 @@ font-weight: 600;
   z-index: 1;
   height: 100vh;
 }
-
+.banner {
+  background: url(../../assets/video/sunset.png) center/cover no-repeat;
+}
 .banner .banner__content {
   margin-bottom: 120px;
 }
@@ -8502,6 +8504,9 @@ display: block!important;
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .banner {
+  background: url(../../assets/video/sunset-mobile.jpg) center/cover no-repeat;
+}
       h2 {
         font-size: 34px;
         line-height: 36px;

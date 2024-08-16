@@ -194,7 +194,7 @@ button:focus {
   outline: 0px;
 }
 .navbar__logo img{
-    max-height: 76px;
+    max-width: 105px;
 }
 ul,
 ol {
@@ -2198,7 +2198,7 @@ font-weight: 600;
     font-size: 13px;
 }
 .navbar__logo img {
-    max-height: 66px;
+    max-width: 76px;
 }
       .overview .overview__single {
         padding: 20px 10px!important;

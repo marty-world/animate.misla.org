@@ -128,27 +128,27 @@
                            <ul class="navbar__list">
 
                               <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <button aria-label="dropdown menu" class="navbar__dropdown-label">Courses</button>
+                                 <button aria-label="dropdown menu" class="navbar__dropdown-label"><a class="p-0" href="https://misla.org/courses" target="_blank">Courses</a></button>
                                  <ul class="navbar__sub-menu">
                                     <li>
                                        <a href="https://animate.misla.org/">AI Animation</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                        <a href="https://misla.org/course/ai-art-with-midjourney" target="_blank">AI
                                           Design with ChatGPT & MidJourney</a>
                                     </li>
                                     <li>
                                        <a href="https://misla.org/course/code-like-a-boss-build-your-business-website"
                                           target="_blank">Build an App with React Native</a>
-                                    </li>
+                                    </li> -->
                                     <li>
-                                       <a href="https://misla.org/course/ai-art-with-midjourney" target="_blank">Code
+                                       <a href="https://misla.org/course/code-like-a-boss-build-your-business-website" target="_blank">Code
                                           Like a Boss Build Your Business Site</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                        <a href="https://misla.org/course/drip-marketing-lifecycle-email-marketing"
                                           target="_blank">Drip Marketing: Lifecycle/ Email Marketing</a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                        <a href="https://misla.org/course/javascript-aint-a-game"
                                           target="_blank">Javascript Aint a Game: Build Games with JS</a>
@@ -186,12 +186,15 @@
                               <li class="navbar__item nav-fade">
                                  <a href="https://misla.org/blog" target="_blank">Blog</a>
                               </li>
+                              <li>
+                                 <p id="google_translate_element"></p>
+                              </li>
                            </ul>
                         </div>
                         <div class="navbar__options">
                            <div class="navbar__mobile-options">
-                              <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank" class="btn btn--primary">
-                                 Join now
+                              <a href="https://misla.org/cart" target="_blank" class="cart-link">
+                                 <img src="assets/images/shopping-cart.png" alt="cart" class="cart-logo" />
                               </a>
                            </div>
                            <button class="open-mobile-menu d-flex d-xl-none" aria-label="toggle mobile menu"
@@ -470,7 +473,7 @@
                      <div class="row flex-rev align-items-center gaper">
                         <div class="col-12 col-lg-5">
                            <div class="craft__thumb text-start text-lg-end">
-                              <div class="reveal-img parallax-img pr-70px">
+                              <div class="reveal-img parallax-img pr-70px animate-our-world">
                                  <img src="assets/images/new/girl.png" alt="Image">
                               </div>
                            </div>
@@ -960,25 +963,13 @@
                                           <a href="https://animate.misla.org/">AI Animation</a>
                                        </li>
                                        <li>
-                                          <a href="https://misla.org/course/build-an-app-with-react-native"
-                                             target="_blank">Build an App</a>
-                                       </li>
-                                       <li>
                                           <a href="https://misla.org/course/code-like-a-boss-build-your-business-website"
                                              target="_blank">Code Like a Boss</a>
                                        </li>
                                        <li>
-                                          <a href="https://misla.org/course/drip-marketing-lifecycle-email-marketing"
-                                             target="_blank">AI design with chat GPT</a>
+                                          <a href="https://misla.org/course/javascript-aint-a-game"
+                                             target="_blank">Javascript Aint a Game</a>
                                        </li>
-                                       <li>
-                                          <a href="https://manage.kmail-lists.com/subscriptions/subscribe?a=XN3Ytp&g=TSP4s6"
-                                             target="_blank">Newsletter</a>
-                                       </li>
-                                       <li>
-                                          <a href="https://misla.org/assessment" target="_blank">App Assessment Form</a>
-                                       </li>
-
                                     </ul>
                                  </div>
                               </div>
@@ -1105,4 +1096,31 @@
    <!-- main js -->
    <script src="assets/js/main.js"></script>
 
+   <script type="text/javascript">
+      const googleTranslateElementInit = () => {
+         new window.google.translate.TranslateElement(
+            {
+            pageLanguage: 'en',
+            includedLanguages: 'en,es',
+            // layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+         );
+      };
+
+      window.googleTranslateElementInit = googleTranslateElementInit;
+      setTimeout(() => {
+         const translateElement = document.getElementsByClassName('goog-te-gadget');
+         if (translateElement.length > 0) {
+            const unwantedChild = translateElement[0].querySelector('span');
+            if (unwantedChild) {
+               unwantedChild.remove();
+               translateElement[0].childNodes[1].remove();
+            }
+         }
+      }, 2000);
+   </script>
+   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   </body>
 </html>

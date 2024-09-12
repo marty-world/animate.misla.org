@@ -128,7 +128,8 @@
                            <ul class="navbar__list">
 
                               <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <button aria-label="dropdown menu" class="navbar__dropdown-label"><a class="p-0" href="https://misla.org/courses" target="_blank">Courses</a></button>
+                                 <button aria-label="dropdown menu" class="navbar__dropdown-label"><a class="p-0"
+                                       href="https://misla.org/courses" target="_blank">Courses</a></button>
                                  <ul class="navbar__sub-menu">
                                     <li>
                                        <a href="https://animate.misla.org/">AI Animation</a>
@@ -142,7 +143,8 @@
                                           target="_blank">Build an App with React Native</a>
                                     </li> -->
                                     <li>
-                                       <a href="https://misla.org/course/code-like-a-boss-build-your-business-website" target="_blank">Code
+                                       <a href="https://misla.org/course/code-like-a-boss-build-your-business-website"
+                                          target="_blank">Code
                                           Like a Boss Build Your Business Site</a>
                                     </li>
                                     <!-- <li>
@@ -373,7 +375,7 @@
                               <div class="row">
                                  <div class="col-12 col-lg-7">
                                     <p> <img src="assets//images/new/cal.png" width="32"> <strong>When:</strong></p>
-                                    <p class="mt5">Sept 16 - Dec 7th<br>
+                                    <p class="mt5">Oct 7 - Dec 21<br>
                                        (Dec 7th is Showcase Event)<br>
                                        Mondays & Wednesdays<br>
                                        6:30- 8:00pm Pacific
@@ -392,13 +394,14 @@
                               <div class="row">
                                  <div class="col-12 col-lg-7">
                                     <p> <img src="assets//images/new/money-bag.png" width="32"> <strong>Price:</strong>
-                                       <span class="brand-color">$4500</span></p>
+                                       <span class="brand-color">$4500</span>
+                                    </p>
                                     <p class="mt5">(Scholarships Available)</p>
                                  </div>
                                  <div class="col-12 col-lg-5">
                                     <p style="margin-top: 30px;">
-                                       <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank"
-                                          class="btn btn--primary">Apply Now</a>
+                                       <!-- href="https://forms.gle/SdJP996QZxEzuiCJ9" -->
+                                       <button onclick="handleBuyNow()" class="btn btn--primary">Buy Now</button>
                                     </p>
                                  </div>
                               </div>
@@ -654,14 +657,16 @@
                                        <span>and more…</span>
                                     </p>
                                     <p class="tools-icon display-desktop" style="margin-top: 40px;">
-                                       <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank"
-                                          class="btn btn--primary">Apply Now</a>
+                                       <button onclick="handleBuyNow()" class="btn btn--primary">Buy Now</button>
+                                       <!-- <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank"
+                                          class="btn btn--primary">Buy Now</a> -->
                                     </p>
                                  </div>
                                  <div class="col-12 display-mobile">
                                     <p style="margin-top: 40px;">
-                                       <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank"
-                                          class="btn btn--primary">Apply Now</a>
+                                       <button onclick="handleBuyNow()" class="btn btn--primary">Buy Now</button>
+                                       <!-- <a href="https://forms.gle/SdJP996QZxEzuiCJ9" target="_blank"
+                                          class="btn btn--primary">Buy Now</a> -->
                                     </p>
                                  </div>
                               </div>
@@ -1100,9 +1105,9 @@
       const googleTranslateElementInit = () => {
          new window.google.translate.TranslateElement(
             {
-            pageLanguage: 'en',
-            includedLanguages: 'en,es',
-            // layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+               pageLanguage: 'en',
+               includedLanguages: 'en,es',
+               // layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             },
             'google_translate_element'
          );
@@ -1120,7 +1125,18 @@
          }
       }, 2000);
    </script>
-   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script>
+      const handleBuyNow = () => {
+         const originalSiteUrl = 'http://localhost:4200/courses';
+         const params = new URLSearchParams({
+            id: 'animate-our-world',
+            price: 4500,
+         });
+         window.open(`${originalSiteUrl}?${params.toString()}`, '_blank');
+      }
+   </script>
+</body>
 
-   </body>
 </html>

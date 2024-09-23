@@ -9113,3 +9113,67 @@ display: block!important;
 /* ==== 
  --------- (6.0) responsive styles end ---------
  ==== */
+
+.bootcamp-modal {
+  background-color: #f8f9fa;
+  text-align: center;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.bootcamp-modal .btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.bootcamp-modal img {
+  margin-bottom: 20px;
+  filter: invert(1);
+}
+
+.bootcamp-modal h4 {
+  color: #000;
+}
+
+.bootcamp-modal p {
+  color: #000;
+}
+
+.mentor-box {
+  text-align: center;
+}
+
+.mentor-info {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.mentor-img {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

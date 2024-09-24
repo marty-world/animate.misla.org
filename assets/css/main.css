@@ -187,7 +187,9 @@ button {
   transition: var(--transition);
   cursor: po;
 }
-
+.instructor-row .col-lg-3{
+  width: 20%;
+}
 
 .overview .overview__single {
   cursor: pointer;
@@ -9085,7 +9087,9 @@ display: block!important;
   .footer__nav-list {
     padding-left: 50px;
 }
-
+.mentor-box .mentor-img {
+  max-height: 193px
+}
 .display-mobile {
   display: none!important;
 }

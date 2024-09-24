@@ -189,7 +189,9 @@ button {
 }
 
 
-
+.overview .overview__single {
+  cursor: pointer;
+}
 
 a i,
 button i {

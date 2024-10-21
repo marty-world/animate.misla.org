@@ -2703,7 +2703,7 @@ span {
   border-bottom: 1px solid rgba(206, 206, 206, 0.4784313725);
 }
 
-.primary-navbar .navbar__sub-menu a::before,
+/* .primary-navbar .navbar__sub-menu a::before, */
 .primary-navbar .navbar__sub-menu button::before {
   content: "";
   position: absolute;
@@ -10615,4 +10615,25 @@ span {
 .mentor-img {
   height: 180px;
   object-fit: cover;
+}
+
+
+
+/* Flexbox container for the icon */
+.icon-container {
+  display: flex;
+  height: 2.75rem; /* equivalent to h-11 */
+  width: 2.75rem;  /* equivalent to w-11 */
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; /* equivalent to rounded-lg */
+  background-color: #F3F4F6; /* equivalent to bg-gray-50 */
+  transition: background-color 0.3s ease;
+}
+
+/* Icon image styling */
+.icon-image {
+  height: 2rem; /* equivalent to h-8 */
+  width: 2rem;  /* equivalent to w-8 */
 }

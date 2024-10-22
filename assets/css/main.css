@@ -10639,3 +10639,7 @@ span {
     width: 20%;
   }
 }
+
+.navbar__menu__mobile {
+  display: none;
+}

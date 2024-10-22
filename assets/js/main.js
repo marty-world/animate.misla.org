@@ -244,7 +244,7 @@
      * ======================================
      */
     if ($(".mobile-menu").length > 0) {
-      var mobileMenuContent = $(".navbar__menu").html();
+      var mobileMenuContent = $(".navbar__menu__mobile").html();
       $(".mobile-menu__list").append(mobileMenuContent);
 
       $(".mobile-menu .navbar__dropdown-label").on("click", function () {

@@ -2317,7 +2317,12 @@ span {
     height: 28px;
     margin-right: 4px;
   }
-
+.mentor-info {
+    padding: 0.5rem .5rem!important;
+}
+.mentor-img {
+    height: 140px!important;
+}
   .mheight-icon {
     width: 34px !important;
     height: 32px !important;
@@ -2424,11 +2429,13 @@ span {
   }
 
   .mmb-40 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
-
+.mt5 br {
+  display: none;
+}
   .space70px {
-    height: 70px;
+    height: 50px;
   }
 
   .section.testimonials h2 {

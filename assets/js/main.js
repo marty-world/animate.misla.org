@@ -260,24 +260,24 @@
     }
 
     $(".open-mobile-menu").on("click", function () {
-      $(".mobile-menu__backdrop").addClass("mobile-menu__backdrop-active");
-      $(".nav-fade").each(function (i) {
-        $(this).css("animation-delay", 0.2 * 1 * i + "s");
-      });
+      // $(".mobile-menu__backdrop").addClass("mobile-menu__backdrop-active");
+      // $(".nav-fade").each(function (i) {
+      //   $(this).css("animation-delay", 0.2 * 1 * i + "s");
+      // });
 
       $(".mobile-menu").addClass("show-menu");
-      $(".mobile-menu__wrapper").removeClass("nav-fade-active");
+      // $(".mobile-menu__wrapper").removeClass("nav-fade-active");
     });
 
     $(".close-mobile-menu, .mobile-menu__backdrop, .mobile-menu__list li a").on("click", function () {
       setTimeout(function () {
         $(".mobile-menu").removeClass("show-menu");
       }, 900);
-      setTimeout(function () {
-        $(".mobile-menu__backdrop").removeClass("mobile-menu__backdrop-active");
-      }, 1100);
+      // setTimeout(function () {
+      //   $(".mobile-menu__backdrop").removeClass("mobile-menu__backdrop-active");
+      // }, 1100);
 
-      $(".mobile-menu__wrapper").addClass("nav-fade-active");
+      // $(".mobile-menu__wrapper").addClass("nav-fade-active");
     });
 
     /**
